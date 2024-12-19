@@ -5,7 +5,7 @@ from pathlib import Path
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 
 # Project name
-project_name = 'cnnClassifier'
+project_name = 'kidneyDiseaseNet'
 
 # List of files to be created for the project
 list_of_files = [
@@ -22,9 +22,9 @@ list_of_files = [
     "dvc.yaml",
     "params.yaml",
     "requirements.txt",
-    "setup.py",
     'research/trials.pynb',
     "templates/index.html",
+    'pyproject.toml'
     
 ]
 

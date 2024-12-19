@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "kidneyDiseaseNet"
+version = "1.1.0"
+description = "Python package designed for building and training Convolutional Neural Networks (CNNs) to classify kidney diseases"
+authors = ["Srinath V <srinathvsrinatv863@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Srinath991/kidney-disease-classification-app"
+homepage = "https://github.com/Srinath991/kidney-disease-classification-app"
+keywords = ["CNN", "Kidney Disease", "Machine Learning", "Artificial Intelligence"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+tensorflow = "^2.10"
+numpy = "^1.23"
+pandas = "^1.5"
+matplotlib = "^3.7"
+seaborn = "^0.12"
+dvc = "^2.12"
+mlflow = "^2.3"
+notebook = "^6.4"
+python-box = "^5.3"
+pyYAML = "^6.0"
+tqdm = "^4.65"
+ensure = "^0.5"
+joblib = "^1.2"
+types-pyYAML = "^6.0"
+scipy = "^1.9"
+gdown = "^4.5"
+fastapi = "^0.95"
+uvicorn = "^0.20"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4"
+black = "^23.3"
+
+
+[tool.poetry.urls]
+bug_tracker = "https://github.com/Srinath991/kidney-disease-classification-app/issues"
+documentation = "https://github.com/Srinath991/kidney-disease-classification-app/wiki"
+
+[tool.poetry.extras]
+dev = ["pytest", "black", "sphinx", "flake8", "pytest-cov"]
+docs = ["sphinx", "sphinx-rtd-theme"]
+tests = ["pytest", "pytest-cov"]
+security = ["bandit", "safety"]
+container = ["docker"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
