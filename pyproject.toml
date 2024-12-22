@@ -12,7 +12,7 @@ keywords = ["CNN", "Kidney Disease", "Machine Learning", "Artificial Intelligenc
 
 
 [tool.poetry.dependencies]
-python = "3.12.8"
+python = "~3.12"
 tensorflow = "2.16.2"
 ensure = "1.0.4"
 PyYAML = "6.0.2"

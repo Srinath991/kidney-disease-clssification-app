@@ -2,6 +2,7 @@ from kidneyDiseaseNet import logger
 from kidneyDiseaseNet.pipeline.stage_01_data_ingestion import DataIngestionPipeline
 from kidneyDiseaseNet.pipeline.stage_02_prepare_base_model import PrepareBaseModelTrainingPipeline
 from kidneyDiseaseNet.pipeline.stage_03_model_training import ModelTrainingPipeline
+from kidneyDiseaseNet.pipeline.stage_04_model_evaluation import EvaluationPipeline
 
 
 
@@ -38,4 +39,14 @@ except Exception as e:
         raise e
      
      
+STAGE_NAME = "mlflow evaluation"
+try: 
+   logger.info(f"*******************")
+   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+   prepare_base_model = EvaluationPipeline()
+   prepare_base_model.main()
+   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+        logger.exception(e)
+        raise e
      
