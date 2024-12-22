@@ -7,46 +7,31 @@ license = "MIT"
 readme = "README.md"
 repository = "https://github.com/Srinath991/kidney-disease-classification-app"
 homepage = "https://github.com/Srinath991/kidney-disease-classification-app"
+packages = [{include = "kidneyDiseaseNet", from = "src"}]
 keywords = ["CNN", "Kidney Disease", "Machine Learning", "Artificial Intelligence"]
 
+
 [tool.poetry.dependencies]
-python = ">=3.9,<3.12"
-tensorflow = "^2.10"
-numpy = "^1.23"
-pandas = "^1.5"
-matplotlib = "^3.7"
-seaborn = "^0.12"
-dvc = "^2.12"
-mlflow = "^2.3"
-notebook = "^6.4"
-python-box = "^5.3"
-pyYAML = "^6.0"
-tqdm = "^4.65"
-typeguard = "*"
-ensure ='*'
-joblib = "^1.2"
-types-pyYAML = "^6.0"
-scipy = "^1.9"
-gdown = "^4.5"
-fastapi = "^0.95"
-uvicorn = "^0.20"
-kagglehub = "*"
+python = "3.12.8"
+tensorflow = "2.16.2"
+ensure = "1.0.4"
+PyYAML = "6.0.2"
+joblib = "1.4.2"
+python-box= "6.0.2"
+pillow = "11.0.0"
+scipy = "1.14.1"
+gdown = "5.2.0"
 
 [tool.poetry.dev-dependencies]
-pytest = "^7.4"
-black = "^23.3"
-
+ipykernel= "6.29.5"
 
 [tool.poetry.urls]
 bug_tracker = "https://github.com/Srinath991/kidney-disease-classification-app/issues"
 documentation = "https://github.com/Srinath991/kidney-disease-classification-app/wiki"
 
 [tool.poetry.extras]
-dev = ["pytest", "black", "sphinx", "flake8", "pytest-cov"]
-docs = ["sphinx", "sphinx-rtd-theme"]
-tests = ["pytest", "pytest-cov"]
-security = ["bandit", "safety"]
-container = ["docker"]
+dev = ["pytest", "black" ]
+
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

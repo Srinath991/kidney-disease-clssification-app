@@ -1,7 +1,6 @@
 from kidneyDiseaseNet.config.configuration import ConfigurationManager
 from kidneyDiseaseNet.components.data_ingestion import DataIngestion
 from kidneyDiseaseNet import logger
-
 STAGE_NAME = "Data Ingestion stage"
 
 class DataIngestionPipeline:
