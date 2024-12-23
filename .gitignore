@@ -1,5 +1,12 @@
+# Ignore DVC cache directory
+.dvc/cache/
+
+#project
 DS_store
-/artifacts
+
+# Ignore pipeline outputs/artifacts
+artifacts/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
