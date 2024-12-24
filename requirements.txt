@@ -1,16 +1,16 @@
-python = "~3.12"
-tensorflow = "2.16.2"
-ensure = "1.0.4"
-PyYAML = "6.0.2"
-joblib = "1.4.2"
-python-box= "6.0.2"
-pillow = "11.0.0"
-scipy = "1.14.1"
-gdown = "5.2.0"
-mlflow = "2.19.0"
-dagshub = "0.4.0"
-dvc = "3.58.0"
-fastapi = "0.115.6"
-uvicorn = "0.34.0"
-Jinja2 = "3.1.5"
+python==3.12.3
+tensorflow==2.16.2
+ensure==1.0.4
+PyYAML==6.0.2
+joblib==1.4.2
+python-box==6.0.2
+pillow==11.0.0
+scipy==1.14.1
+gdown==5.2.0
+mlflow==2.19.0
+dagshub==0.4.0
+dvc==3.58.0
+fastapi==0.115.6
+uvicorn==0.34.0
+Jinja2==3.1.5
 -e .

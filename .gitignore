@@ -2,7 +2,7 @@
 .dvc/cache/
 
 #project
-DS_store
+.DS_Store
 
 # Ignore pipeline outputs/artifacts
 artifacts/
