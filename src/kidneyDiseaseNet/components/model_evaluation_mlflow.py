@@ -54,7 +54,7 @@ class Evaluation:
 
     
     def log_into_mlflow(self):
-        dagshub.init(repo_owner='Srinath991', repo_name='kidney-disease-clssification-app', mlflow=True)
+        dagshub.init(repo_owner=os.getenv('DAGSHUB_USERNAME'), repo_name=os.getenv('DAGSHUB_REPO'), mlflow=True)
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
         
         with mlflow.start_run():
