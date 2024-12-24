@@ -12,14 +12,17 @@ https://github.com/Srinath991/kidney-disease-clssification-app
 
 ```bash
 conda create -n ml python=3.8 -y
-```
-
+``` 
 ```bash
 conda activate ml
 ```
+### STEP 02- Set up the environment variables: Create a .env file in the project root with the following content:
+    MLFLOW_TRACKING_PASSWORD= <mlflow_api_key>
+    DAGSHUB_USERNAME=<dagshub_username>
+    DAGSHUB_REPO=<dagshub_repo>
 
 
-### STEP 02- install the requirements
+### STEP 03- install the requirements
 ```bash
 pip install -r requirements.txt
 ```
