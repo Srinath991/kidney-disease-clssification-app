@@ -1,7 +1,29 @@
-# Kidney-Disease-Classification
+# KidneyHealthPredictor
+## Overview
+KidneyHealthPredictor is a deep learning-based application designed to predict whether a kidney is healthy (normal) or affected by a tumor based on an uploaded image. The application utilizes a convolutional neural network (VGG16) model, trained on medical images, to accurately classify kidney health. This project aims to assist healthcare professionals by providing an AI-driven tool for early detection of kidney tumors, potentially enabling quicker intervention and improved patient outcomes.
 
-# How to run?
-### STEPS:
+The application allows users to upload kidney images (such as CT scans or X-rays), and it uses the trained deep learning model to predict whether the kidney is normal or affected by a tumor.
+
+## Features
+- **Image Upload**: Users can upload images of kidneys in formats such as JPG or PNG.
+- **Prediction**: The app uses a pre-trained deep learning model to predict if the kidney is normal or has a tumor.
+- **Result Display**: After prediction, the result is displayed to the user, showing whether the kidney is "Normal" or has a "Tumor".
+- **Deep Learning Model**: The model is built using Convolutional Neural Networks (CNN) to ensure high accuracy in image classification.
+
+## 🛠️ Tech Stack
+- **Backend**: Python, FastAPI(web framework for building APIs)
+- **Frontend**: HTML, CSS, JavaScript (Interactive UI)
+- **Deployment**: Docker,AWS(Cloud deployment)
+- **MLops**:mlflow,DVC,Dagshub (A tools for managing the machine learning lifecycle and For     managing large datasets)
+- **Others**: Uvicorn, Jinja2 (ASGI server to run the FastAPI app and Templating engine used to render dynamic conten)
+
+## How to Use
+- **Upload Image**: On the main page, click the "Upload" button to choose a kidney image from your local machine.
+- **Prediction**: Once the image is uploaded, the model will process it and display the result: either "Normal" or "Tumor".
+- **Interpretation**: Based on the result, users can get insights into whether the kidney is healthy or potentially affected by a tumor.
+
+## Installation Instructions
+Follow these steps to set up the project locally:
 
 Clone the repository
 
