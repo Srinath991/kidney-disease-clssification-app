@@ -14,7 +14,7 @@ The application allows users to upload kidney images (such as CT scans or X-rays
 - **Backend**: Python, FastAPI(web framework for building APIs)
 - **Frontend**: HTML, CSS, JavaScript (Interactive UI)
 - **Deployment**: Docker,AWS(Cloud deployment)
-- **MLops**:mlflow,DVC,Dagshub (A tools for managing the machine learning lifecycle and For     managing large datasets)
+- **MLops Tools**: mlflow,DVC,Dagshub (A tools for managing the machine learning lifecycle and For managing large datasets)
 - **Others**: Uvicorn, Jinja2 (ASGI server to run the FastAPI app and Templating engine used to render dynamic conten)
 
 ## How to Use
@@ -55,9 +55,8 @@ uvicorn app.main:app --reload
 ```
 
 Now,
-```bash
 open up you local host and port
-```
+
 
 
 
