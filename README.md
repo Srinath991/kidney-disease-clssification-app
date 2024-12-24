@@ -8,13 +8,13 @@ The application allows users to upload kidney images (such as CT scans or X-rays
 - **Image Upload**: Users can upload images of kidneys in formats such as JPG or PNG.
 - **Prediction**: The app uses a pre-trained deep learning model to predict if the kidney is normal or has a tumor.
 - **Result Display**: After prediction, the result is displayed to the user, showing whether the kidney is "Normal" or has a "Tumor".
-- **Deep Learning Model**: The model is built using Convolutional Neural Networks (CNN) to ensure high accuracy in image classification.
+- **Deep Learning Model**: The model is built using Convolutional Neural Networks (VGG16) to ensure high accuracy in image classification.
 
 ## 🛠️ Tech Stack
 - **Backend**: Python, FastAPI(web framework for building APIs)
 - **Frontend**: HTML, CSS, JavaScript (Interactive UI)
 - **Deployment**: Docker,AWS(Cloud deployment)
-- **MLops Tools**: mlflow,DVC,Dagshub (A tools for managing the machine learning lifecycle and For managing large datasets)
+- **MLOps Tools**: MLflow,DVC,Dagshub (A tools for managing the machine learning lifecycle and For managing large datasets)
 - **Others**: Uvicorn, Jinja2 (ASGI server to run the FastAPI app and Templating engine used to render dynamic conten)
 
 ## How to Use
@@ -43,7 +43,6 @@ conda activate ml
     DAGSHUB_USERNAME=<dagshub_username>
     DAGSHUB_REPO=<dagshub_repo>
 
-
 ### STEP 03- install the requirements
 ```bash
 pip install -r requirements.txt
@@ -53,17 +52,13 @@ pip install -r requirements.txt
 # Finally run the following command
 uvicorn app.main:app --reload
 ```
-
 Now,
 open up you local host and port
-
-
 
 
 ## MLflow
 
 - [Documentation](https://mlflow.org/docs/latest/index.html)
-
 - [MLflow tutorial](https://youtu.be/qdcHHrsXA48?si=bD5vDS60akNphkem)
 
 ##### cmd
@@ -72,33 +67,25 @@ open up you local host and port
 ### dagshub
 [dagshub](https://dagshub.com/)
 
-
-
 ### DVC cmd
-
 1. dvc init
 2. dvc repro
 3. dvc dag
 
-
 ## About MLflow & DVC
-
 MLflow
-
  - Its Production Grade
  - Trace all of your expriements
  - Logging & taging your model
 
-
 DVC 
-
  - Its very lite weight for POC only
  - lite weight expriements tracker
  - It can perform Orchestration (Creating Pipelines)
 
 
 
-# AWS-CICD-Deployment-with-Github-Actions
+# AWS-CICD Deployment with GitHub Actions
 
 ## 1. Login to AWS console.
 
